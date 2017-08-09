@@ -18,3 +18,6 @@
    while(Cola.isEmpty()!=true){
             TXTimprimir.setText(TXTimprimir.getText()+Cola.remove().toString()+"-");
         }
+        
+    //CREAR LISTA ENLAZADA
+     Queue<String> Cola = new LinkedList<String>();
