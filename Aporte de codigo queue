@@ -1,0 +1,20 @@
+ //CODIGO INSERTAR 
+ 
+ Cola.add(TXTinsertar.getText());
+        JOptionPane.showMessageDialog(null,("Se ha insertado exitosamente un elemento en la Cola"));
+        TXTinsertar.setText(""); 
+  
+  //CODIGO ELIMINAR
+  
+   if(Cola.isEmpty()==true){
+            JOptionPane.showMessageDialog(null, "La Cola no contiene elemento.");
+        }else{
+            TXTeliminar.setText(TXTinsertar.getText()+Cola.remove().toString());
+            JOptionPane.showMessageDialog(null,"Se elimino exitosamente el primer elemento de la cola");
+        }  
+        
+   //CODIGO IMPRIMIR 
+   
+   while(Cola.isEmpty()!=true){
+            TXTimprimir.setText(TXTimprimir.getText()+Cola.remove().toString()+"-");
+        }
